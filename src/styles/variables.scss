@@ -2,6 +2,8 @@ $color-white-0: #ffffff;
 
 $color-black-0: #000000;
 
+$color-blue-0: #1b2535;
+
 // Flex mixin
 @mixin d-flex($jc: flex-start, $al: flex-start) {
   display: flex;

@@ -1,0 +1,321 @@
+@import "styles/variables.scss";
+
+.task {
+  @include d-flex(flex-start, stretch);
+}
+
+.sideBar {
+  background: $color-blue-0;
+  max-width: 259px;
+  margin: 0;
+  width: 100%;
+  @include d-flex(flex-start, center);
+  flex-direction: column;
+
+  &Logo {
+    max-width: 105px;
+    margin: 52px 0 64px 0;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  ul {
+    width: 183px;
+
+    li {
+      @include font-style(1.8rem, 800, 21.13px);
+      color: $color-white-0;
+      padding: 14px;
+      @include d-flex(space-between, center);
+      gap: 14px;
+    }
+  }
+
+  &Btn {
+    padding: 60px 0;
+    @include d-flex(center);
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 12px;
+
+    &List {
+      border: 2px solid #ffffff;
+      border-radius: 36px;
+      padding: 10px;
+      width: 183px;
+      cursor: pointer;
+
+      span {
+        color: $color-white-0;
+        @include d-flex(flex-start, center);
+        @include font-style(1.8rem, 700, 21.13px);
+        gap: 10px;
+        gap: 24px;
+      }
+    }
+  }
+}
+
+.data {
+  @include d-flex(flex-start, center);
+  gap: 8px;
+}
+
+.specialText {
+  padding: 0 !important;
+
+  span {
+    margin: 0 !important;
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 40px;
+  background: #f4f6f6;
+  // height: 100vh;
+
+  img {
+    width: 44px;
+    background: $color-white-0;
+    padding: 13px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  &List {
+    @include d-flex(space-between, center);
+    margin-bottom: 40px;
+
+    &Data {
+      @include d-flex(flex-start, center);
+      gap: 12px;
+    }
+
+    &Text {
+      background: $color-white-0;
+      font-family: Raleway;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 17.61px;
+      border-radius: 36px;
+      padding: 14px 12px 13px 6px;
+
+      img {
+        padding: 0;
+        height: 15px;
+        width: 18px;
+      }
+
+      span {
+        background: #1b2535;
+        width: 44px;
+        height: 44px;
+        margin: 0 12px 0 0;
+        padding: 10px 13px;
+        border-radius: 50%;
+        color: $color-white-0;
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17.61px;
+        text-align: left;
+      }
+    }
+  }
+
+  &Navigator {
+    @include d-flex(flex-start, center);
+    gap: 32px;
+
+    span {
+      color: #1b2535;
+      font-family: Raleway;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46.96px;
+      text-align: left;
+    }
+  }
+
+  &Cards {
+    @include d-flex(space-between);
+    gap: 10px;
+
+    &Name {
+      @include d-flex(space-between, center);
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    li {
+      background: #ffffff;
+      @include d-flex(flex-start, flex-start);
+      padding: 24px;
+      flex-direction: column;
+      flex-basis: 40%;
+
+      span {
+        color: #4690ff;
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 36.31px;
+        text-align: left;
+      }
+
+      label {
+        font-family: Raleway;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 29.35px;
+        text-align: left;
+        color: #1b2535;
+      }
+    }
+
+    img {
+      padding: 0;
+      width: 18px;
+      height: 15px;
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif !important;
+
+  &Button {
+    background: $color-white-0;
+    margin: 40px 0 19px 0;
+    gap: 24px;
+    background: #ffffff;
+    @include d-flex(flex-end, center);
+    padding: 7px;
+    max-width: 383px;
+    width: 100%;
+
+    span {
+      background: #4690ff;
+      padding: 0 25px;
+      margin: 9px;
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.13px;
+      text-align: center;
+      color: $color-white-0;
+      border-radius: 36px;
+      @include d-flex(flex-start, center);
+
+      img {
+        padding: 0;
+        background: none;
+        width: 16.5px;
+      }
+    }
+  }
+
+  &Data {
+    @include d-flex(flex-start, center);
+    gap: 24px;
+  }
+
+  &Input {
+    @include d-flex(flex-start, center);
+    border-bottom: 2px solid #f1f1f1;
+    gap: 24px;
+  }
+
+  &Icons {
+    @include d-flex();
+    gap: 40px;
+  }
+
+  select {
+    border: none;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    text-align: left;
+    @include d-flex();
+    gap: 6px;
+  }
+
+  &Controls {
+    margin: 40px 0 19px 0;
+    gap: 24px;
+    background: #ffffff;
+    @include d-flex(flex-start, center);
+    padding: 24px;
+    flex-basis: 100%;
+
+    img {
+      padding: 0;
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  .searchInput {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.48px;
+    text-align: left;
+    color: #dedede;
+    border: none;
+  }
+
+  thead,
+  tr {
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  &Status {
+    background: #ff6b00;
+    border-radius: 36px;
+    padding: 0 12px !important;
+  }
+
+  .tableList {
+    width: 100%;
+    box-shadow: 0px 0px 15px 0px #dbe7e5;
+    background: $color-white-0;
+    padding: 24px;
+
+    th {
+      font-size: 20px !important;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 0 0 20px 0;
+      font-weight: 700 !important;
+    }
+
+    th,
+    td {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 17.61px;
+      text-align: left;
+      font-family: "Inter", sans-serif !important;
+
+      &:last-of-type {
+        @include d-flex(center, center);
+      }
+    }
+
+    td img {
+      width: 20px;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+}

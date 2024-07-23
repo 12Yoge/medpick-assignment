@@ -6,6 +6,6 @@
       "@/*": ["/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/containers/Home/.jsx"],
   "exclude": ["node_modules"]
 }
